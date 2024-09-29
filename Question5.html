@@ -1,0 +1,42 @@
+<!-- Explain the z-index, with a code example. -->
+<!--Answer: The z-index CSS property controls the stacking order of elements along the z-axis (the depth axis). It determines which element appears in front when elements overlap. The higher the z-index value, the closer the element is to the user.
+
+Only positioned elements (position: relative;, absolute;, fixed;, or sticky;) can have a z-index applied.
+Elements with a higher z-index value appear in front of elements with lower z-index. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index Example</title>
+    <style>
+        /* Box 1 with a lower z-index */
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            z-index: 1; /* Lower z-index */
+        }
+
+        /* Box 2 with a higher z-index */
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            left: 80px;
+            top: 80px;
+            z-index: 2; /* Higher z-index, appears on top */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+</body>
+</html>

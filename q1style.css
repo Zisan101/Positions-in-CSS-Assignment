@@ -1,0 +1,80 @@
+/* General box styling */
+/* Universal Box styling */
+.universal-box {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background-color: lightgray;
+    margin: 50px auto;
+    border: 2px solid black;
+}
+
+/* Box A styling */
+#boxA {
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+/* Box B (top-left relative to A) */
+#boxB {
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    position: absolute;
+    left: calc(100px - 30px - 25px);
+    top: calc(100px - 30px - 25px);
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+/* Box C (top-right relative to A) */
+#boxC {
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+    position: absolute;
+    left: calc(100px + 30px + 25px);
+    top: calc(100px - 30px - 25px);
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+/* Box D (bottom-left relative to A) */
+#boxD {
+    width: 50px;
+    height: 50px;
+    background-color: lightyellow;
+    position: absolute;
+    left: calc(100px - 30px - 25px);
+    top: calc(100px + 30px + 25px);
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+/* Box E (bottom-right relative to A) */
+#boxE {
+    width: 50px;
+    height: 50px;
+    background-color: lightpink;
+    position: absolute;
+    left: calc(100px + 30px + 25px);
+    top: calc(100px + 30px + 25px);
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    border: 1px solid black;
+}

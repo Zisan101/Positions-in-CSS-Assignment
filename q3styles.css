@@ -1,0 +1,26 @@
+/* Styling for the card container */
+.card {
+    width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    overflow: hidden; /* To clear the float */
+}
+
+/* Styling for the text in the card */
+.card-text {
+    float: left;
+    width: 65%;
+}
+
+/* Styling for the image in the card */
+.card-image {
+    float: right;
+    width: 30%;
+}
+
+.card-image img {
+    height: 200px;
+    max-width: 100%;
+}

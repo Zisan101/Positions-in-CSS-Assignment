@@ -1,0 +1,15 @@
+<!-- Explain the difference between Absolute and Relative positioning. -->
+The key difference between "absolute** and **relative** positioning in CSS lies in how each element is positioned:
+
+1. "Relative Positionin":
+   - An element with `position: relative` is positioned "relative to its normal position" in the document flow. It is shifted from where it would normally appear on the page.
+   - Other elements around it still respect its original space, meaning the layout around the element remains unchanged.
+   - Example: Moving an element 20px down from where it originally appears using `top: 20px` will still leave a gap in its original spot.
+
+2. "Absolute Positioning":
+   - An element with `position: absolute` is positioned "relative to the nearest positioned ancestor" (an ancestor with `relative`, `absolute`, or `fixed` positioning).
+   - If no positioned ancestor is found, it is placed relative to the "viewport".
+   - Absolute positioning "removes the element from the document flow", meaning surrounding elements do not take it into account, allowing for full control over placement.
+
+In summary, "relative positioning" offsets an element while keeping it in the flow, whereas "absolute positioning" fully detaches it from the normal document flow and positions it precisely relative to its nearest ancestor or viewport.
+
